@@ -30,7 +30,7 @@ export const LoginForm = () => {
             className={styles.input}
             type="email"
             name="email"
-            title="For example: example@gmail.com"
+            title="For example: example@email.com"
             required
           />
         </Form.Group>

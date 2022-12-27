@@ -10,8 +10,8 @@ import { PrivateRoute } from './PrivateRoute';
 
 const Home = lazy(() => import('../pages/Home'));
 const Register = lazy(() => import('../pages/Register'));
-const Login = lazy(() => lazy('../pages/Login'));
-const ContactsPage = lazy(() => '../pages/ContactsPage');
+const Login = lazy(() => import('../pages/Login'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export const App = () => {
   const dispatch = useDispatch();

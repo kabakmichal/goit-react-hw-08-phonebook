@@ -10,9 +10,9 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
   const items = useSelector(selectItems);
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.currentTarget;
+  const handleSubmit = evt => {
+    evt.preventDefault();
+    const form = evt.currentTarget;
     const name = form.elements.name.value;
     const number = form.elements.number.value;
     const nameArray = items.map(item => item.name);

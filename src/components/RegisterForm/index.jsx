@@ -7,6 +7,7 @@ export const RegisterForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
+    e.preventDefault();
     const form = e.currentTarget;
     const name = form.elements.name.value;
     const email = form.elements.email.value;
@@ -27,7 +28,7 @@ export const RegisterForm = () => {
         <p className={styles.paragraph}>Register account</p>
         <Form.Group className="mb-3" controlId="inputName">
           <Form.Label>Username</Form.Label>
-          <Form.control
+          <Form.Control
             className={styles.input}
             type="name"
             name="name"
@@ -41,7 +42,7 @@ export const RegisterForm = () => {
             className={styles.input}
             type="email"
             name="email"
-            title="For example: example@gmail.com"
+            title="For example: example@email.com"
             required
           />
         </Form.Group>

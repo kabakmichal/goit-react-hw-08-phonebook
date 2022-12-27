@@ -18,7 +18,7 @@ export const Filter = () => {
   return (
     <Form className="mb-1">
       <Form.Group>
-        <Form.Label>Find contacts by name</Form.Label>
+        <Form.Label>Find contacts by Name</Form.Label>
         <Form.Control
           type="text"
           name="filter"
